@@ -6,13 +6,13 @@ body {
 }
 
 h1 {
-  color: #bc2424;
+  color: #2843de;
   font-size: 2.5em;
   margin-bottom: 10px;
 }
 
 p {
-  color: #667;
+  color: rgb(79, 98, 144);
   font-size: 1.2em;
   margin-bottom: 20px;
 }
