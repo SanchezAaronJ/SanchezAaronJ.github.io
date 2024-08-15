@@ -1,3 +1,5 @@
-window.onload = function () {
-  alert("Welcome to my About Page!");
-};
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+}
