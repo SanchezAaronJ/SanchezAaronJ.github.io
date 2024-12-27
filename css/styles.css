@@ -228,32 +228,38 @@ button:hover,
 }
 
 .contact-link {
-  color: #00bfff; /* Vibrant blue for email link */
-  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0; /* Add spacing around the email link */
+  color: #00bfff;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 20px; /* Larger font for emphasis */
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #005fa3; /* Darker blue on hover */
+  color: #005fa3; /* Slightly darker blue on hover */
 }
 
 .social-link {
   display: inline-block;
-  margin: 0 10px; /* Spacing between links */
+  margin: 10px;
   color: #00bfff;
   text-decoration: none;
-  font-size: 18px;
-  border: 1px solid #00bfff; /* Add a border to the buttons */
-  padding: 8px 15px; /* Padding for better click area */
-  border-radius: 5px; /* Rounded corners */
-  transition: all 0.3s ease;
+  font-size: 18px; /* Slightly larger text */
+  border: 2px solid #00bfff; /* Make the border slightly thicker */
+  padding: 10px 20px; /* Increase padding for a larger button */
+  border-radius: 8px; /* More rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
 .social-link:hover {
-  background-color: #00bfff;
-  color: #fff;
-  border-color: #005fa3;
+  background-color: #00bfff; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+.social-link i {
+  margin-right: 8px; /* Space between icon and text */
 }
 
 .button-group {
@@ -285,4 +291,10 @@ hr {
   border: none;
   border-top: 1px solid #444;
   margin: 20px 0;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #444; /* Subtle line */
+  margin: 40px auto; /* Space around the divider */
+  max-width: 800px;
 }
