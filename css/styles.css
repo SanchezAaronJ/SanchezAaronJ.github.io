@@ -30,6 +30,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+h2:hover {
+  color: #00bfff; /* Match the button color */
+  text-decoration: underline;
+}
+
 p {
   color: #bbbbbb;
   font-size: 18px;
@@ -219,4 +224,13 @@ button:hover,
   background-color: #00bfff;
   color: #fff;
   border-color: #005fa3;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-group a {
+  margin: 0 10px; /* Space between buttons */
 }
