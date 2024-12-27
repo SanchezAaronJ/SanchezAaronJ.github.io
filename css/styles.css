@@ -1,10 +1,10 @@
 /* General Reset and Styles */
-html,
-body {
-  height: 100%;
+html body {
+  background-color: #1a1a1a !important;
 }
 body {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a !important;
+  background: #1a1a1a;
   font-family: "Arial", sans-serif;
   color: #ddd;
   margin: 0;
@@ -151,7 +151,6 @@ nav ul li a:hover {
 section {
   text-align: center;
   padding: 60px 20px;
-  background-color: #1a1a1a;
   color: #ddd;
   margin: 0 auto;
 }
