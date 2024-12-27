@@ -1,8 +1,8 @@
-/* General Styles */
+/* General Reset and Styles */
 body {
-  background-color: #1a1a1a; /* Uniform dark background for all pages */
+  background-color: #1a1a1a;
   font-family: "Arial", sans-serif;
-  color: #ddd; /* Light text for contrast */
+  color: #ddd;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ p {
 }
 
 h1 {
-  color: #f4f4f4; /* Slightly brighter color for main headings */
+  color: #f4f4f4;
   font-size: 48px;
   font-weight: bold;
   text-align: center;
@@ -24,21 +24,20 @@ h1 {
 }
 
 h2 {
-  color: #cccccc; /* Lighter gray for section titles */
+  color: #cccccc;
   font-size: 32px;
   font-weight: lighter;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Global H2 Hover Style (Consistent Across All Pages) */
 h2:hover {
-  color: #f4f4f4; /* White hover color for all h2 elements */
-  text-decoration: underline; /* Remove underline for hover */
+  color: #f4f4f4;
+  text-decoration: underline;
 }
 
 p {
-  color: #bbbbbb; /* Softer gray for paragraph text */
+  color: #bbbbbb;
   font-size: 18px;
   text-align: center;
   line-height: 1.6;
@@ -47,9 +46,9 @@ p {
 
 /* Navigation Bar */
 nav {
-  background-color: #222; /* Consistent dark navbar color */
+  background-color: #222;
   color: white;
-  padding: 20px 0; /* Equal padding for top and bottom */
+  padding: 20px 0;
 }
 
 nav ul {
@@ -58,170 +57,35 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between navigation links */
-}
-
-nav ul li {
-  margin: 0;
-  padding: 0;
+  gap: 20px;
 }
 
 nav ul li a {
   color: #ddd;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px; /* Padding inside links for clickable area */
-  border-radius: 5px; /* Rounded edges for links */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a.active {
-  background-color: #555; /* Slightly lighter gray for active page */
-  color: #00bfff; /* Highlight the active page */
+  background-color: #555;
+  color: #00bfff;
 }
 
 nav ul li a:hover {
-  background-color: #555; /* Slightly lighter gray on hover */
-  color: #00bfff; /* Blue text on hover */
-}
-
-/* Sections */
-section {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #1a1a1a; /* Uniform dark background for all sections */
-  color: #ddd; /* Light text */
-  overflow: hidden;
-}
-
-/* General Section Box Style */
-.section-box {
-  background-color: #2c2c2c; /* Dark gray for content boxes */
-  color: #ddd;
-  padding: 20px 30px;
-  border-radius: 10px; /* Rounded corners */
-  max-width: 800px;
-  width: 90%;
-  margin: 20px auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.section-box h2 {
-  color: #f4f4f4; /* Bright heading for boxes */
-  margin-bottom: 10px;
-}
-
-.section-box p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-}
-/* About Me Page Specific Styles */
-/* Divider */
-hr.divider {
-  border: none;
-  border-top: 1px solid #444; /* Subtle divider line */
-  margin: 40px auto; /* Spacing above and below */
-  max-width: 800px; /* Consistent width */
-}
-
-/* About Me Page Specific Styles */
-.about-section-box {
-  background-color: #2c2c2c; /* Dark gray background consistent with other pages */
-  color: #ddd; /* Same light text color as other sections */
-  padding: 20px 30px; /* Uniform padding */
-  border-radius: 10px; /* Rounded corners */
-  max-width: 800px; /* Align width with other sections */
-  width: 90%; /* For responsiveness */
-  margin: 20px auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for consistency */
-  text-align: left; /* Left-align for readability */
-  line-height: 1.8; /* Improved spacing */
-  font-size: 18px;
-  box-sizing: border-box; /* Uniform font size */
-}
-
-.about-section-box h2 {
-  text-align: center; /* Keep the main heading centered */
-  color: #f4f4f4; /* Bright heading color for contrast */
-  margin-bottom: 20px;
-}
-
-.about-section-box ul {
-  margin-top: 20px; /* Add spacing above the list */
-  padding-left: 40px; /* Indent bullet points */
-  list-style-type: disc; /* Use bullets for lists */
-}
-
-.about-section-box ul li {
-  margin-bottom: 15px; /* Add spacing between list items */
-}
-
-.about-section-box h3 {
-  margin-top: 30px; /* Add spacing above job titles */
-  margin-bottom: 10px; /* Add spacing below job titles */
-  font-size: 20px; /* Make job titles stand out */
-  color: #00bfff; /* Highlight job titles in blue */
-}
-
-.about-section-box .job-details {
-  font-size: 16px; /* Slightly smaller for job details */
-  color: #bbbbbb; /* Softer gray for less important text */
-  margin-bottom: 10px; /* Add space below job details */
-}
-
-/* Footer */
-footer {
-  font-size: 14px;
-  background-color: #222; /* Matches navbar for consistency */
-  color: #bbb;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer a {
+  background-color: #555;
   color: #00bfff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Call-to-Action Buttons */
-button,
-.cta-button {
-  display: inline-block;
-  font-size: 18px;
-  color: white;
-  background-color: #00bfff; /* Vibrant blue */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover,
-.cta-button:hover {
-  background-color: #008cba; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Hero Section */
 #hero {
-  background: url("images/hero-background.jpg") no-repeat center center/cover; /* Background image for the hero */
+  background: url("images/hero-background.jpg") no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
-  position: relative; /* For overlay effect */
+  position: relative;
 }
 
 #hero::before {
@@ -231,13 +95,13 @@ button:hover,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* Ensure content is above overlay */
+  z-index: 2;
 }
 
 .hero-content h1 {
@@ -254,51 +118,136 @@ button:hover,
 
 .hero-buttons {
   display: flex;
-  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Add space between buttons */
+  gap: 10px;
 }
 
 .cta-button {
-  width: auto; /* Let buttons adjust width naturally */
-  min-width: 150px; /* Ensure buttons don't get too narrow */
-  text-align: center; /* Center-align text inside buttons */
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #00bfff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button.hero {
-  background-color: #00bfff;
   margin: 0 10px;
 }
 
-.cta-button.hero:hover {
+.cta-button:hover {
   background-color: #008cba;
+  transform: scale(1.05);
 }
 
-/* Contact Section Links */
+/* Sections */
+section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: #ddd;
+  overflow: hidden;
+}
+
+.section-box {
+  background-color: #2c2c2c;
+  color: #ddd;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section-box h2 {
+  color: #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.section-box p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.section-box ul {
+  margin-top: 20px;
+  padding-left: 40px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+.section-box ul li {
+  margin-bottom: 15px;
+}
+
+.section-box h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #00bfff;
+}
+
+.section-box .job-details {
+  font-size: 16px;
+  color: #bbbbbb;
+  margin-bottom: 10px;
+}
+
+/* Divider */
+hr.divider {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+/* Projects Section */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.project {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
 .contact-links {
   margin-top: 20px;
 }
 
 .contact-link {
-  display: inline-flex; /* Makes the icon and text align properly */
-  align-items: center; /* Vertically aligns the icon and text */
-  margin: 20px 0; /* Adds spacing around the email link */
-  color: #00bfff; /* Blue color for the text */
+  display: inline-flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #00bfff;
   font-weight: bold;
-  text-decoration: none; /* Removes underline by default */
-  font-size: 20px; /* Larger font for emphasis */
+  text-decoration: none;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #005fa3; /* Slightly darker blue on hover */
-  text-decoration: underline; /* Adds underline on hover */
+  color: #005fa3;
+  text-decoration: underline;
 }
 
 .contact-link i {
-  margin-right: 8px; /* Adds spacing between the icon and text */
-  color: #00bfff; /* Matches the text color */
-  font-size: 22px; /* Ensures the icon matches the text size */
+  margin-right: 8px;
+  color: #00bfff;
+  font-size: 22px;
 }
 
 .social-link {
@@ -323,30 +272,26 @@ button:hover,
   margin-right: 8px;
 }
 
-/* Projects Section */
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 20px 0;
+/* Footer */
+footer {
+  font-size: 14px;
+  background-color: #222;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-.project {
-  background-color: #2c2c2c;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
-}
-
-/* Divider */
-hr.divider {
-  border: none;
-  border-top: 1px solid #444;
-  margin: 40px auto;
-  max-width: 800px;
 }
