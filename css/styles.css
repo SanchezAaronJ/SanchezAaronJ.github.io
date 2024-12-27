@@ -49,44 +49,63 @@ p {
 
 /* Navigation Bar */
 nav {
-  background-color: #222;
+  background-color: #222; /* Consistent dark background for the navbar */
   color: white;
-  padding: 20px 0;
+  padding: 20px 0; /* Equal padding for top and bottom */
+  z-index: 10; /* Ensure the navbar stays on top of other elements */
+  position: relative; /* Position relative for stacking context */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 nav ul {
   list-style: none; /* Remove default list styling */
   padding: 0;
   margin: 0;
-  display: flex; /* Ensure all list items are aligned in a single row */
-  justify-content: center; /* Center the navigation bar */
-  gap: 20px; /* Add space between links */
+  display: flex; /* Flexbox layout for alignment */
+  justify-content: center; /* Center all navigation links */
+  gap: 20px; /* Space between navigation links */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav ul li {
-  margin: 0;
-  padding: 0;
-  position: relative; /* Ensure child elements like hover effects stay within bounds */
+  margin: 0; /* No extra margin for list items */
+  padding: 0; /* No padding for list items */
+  position: relative; /* Position relative to handle hover effects */
 }
 
 nav ul li a {
-  color: #ddd; /* Default text color */
+  color: #ddd; /* Default text color for links */
   text-decoration: none; /* Remove underline */
-  font-size: 18px; /* Font size for links */
-  padding: 10px 15px; /* Add padding for clickable area */
-  border-radius: 5px; /* Optional: Rounded edges */
+  font-size: 18px; /* Standard font size for links */
+  padding: 10px 15px; /* Padding for clickable area */
+  border-radius: 5px; /* Rounded edges for hover effect */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-  display: inline-block; /* Prevent overlap on hover */
+  display: inline-block; /* Ensure links don’t overflow */
+  line-height: 1; /* Prevent extra spacing inside links */
+}
+
+nav ul li a.active {
+  background-color: #555; /* Highlight the active page */
+  color: #00bfff; /* Highlight text color for the active link */
 }
 
 nav ul li a:hover {
   background-color: #555; /* Slightly lighter gray on hover */
-  color: #00bfff; /* Highlight color for hover */
+  color: #00bfff; /* Highlight text color for hover */
 }
 
-nav ul li a.active {
-  background-color: #555; /* Active page background */
-  color: #00bfff; /* Active page text color */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: inline; /* Stack links vertically on smaller screens */
+    gap: 10px; /* Adjust gap between links */
+  }
+
+  nav ul li a {
+    text-align: center; /* Center-align text for mobile layout */
+    padding: 10px 20px; /* Adjust padding for touch-friendly design */
+    min-width: 100px; /* Ensure links don't shrink too much */
+  }
 }
 
 /* Hero Section */
