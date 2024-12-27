@@ -74,7 +74,8 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  background-color: #555; /* Highlight the active page */
+  background-color: #555;
+  color: #00bfff; /* Highlight the active page */
 }
 
 nav ul li a:hover {
