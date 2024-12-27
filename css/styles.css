@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-  background-color: #1a1a1a; /* Darker background for the entire page */
+  background-color: #1a1a1a; /* Uniform dark background for all pages */
   font-family: "Arial", sans-serif;
-  color: #ddd;
+  color: #ddd; /* Light text for contrast */
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ p {
 }
 
 h1 {
-  color: #f4f4f4;
+  color: #f4f4f4; /* Slightly brighter color for main headings */
   font-size: 48px;
   font-weight: bold;
   text-align: center;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  color: #cccccc;
+  color: #cccccc; /* Lighter gray for section titles */
   font-size: 32px;
   font-weight: lighter;
   text-align: center;
@@ -31,12 +31,12 @@ h2 {
 }
 
 h2:hover {
-  color: #00bfff; /* Match the button color */
+  color: #00bfff; /* Match the button hover color */
   text-decoration: underline;
 }
 
 p {
-  color: #bbbbbb;
+  color: #bbbbbb; /* Softer gray for paragraph text */
   font-size: 18px;
   text-align: center;
   line-height: 1.6;
@@ -45,9 +45,9 @@ p {
 
 /* Navigation Bar */
 nav {
-  background-color: #222; /* Consistent dark background for navbar */
+  background-color: #222; /* Consistent dark navbar color */
   color: white;
-  padding: 20px 0; /* Consistent padding for top and bottom */
+  padding: 20px 0; /* Equal padding for top and bottom */
 }
 
 nav ul {
@@ -56,7 +56,7 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between links */
+  gap: 20px; /* Space between navigation links */
 }
 
 nav ul li {
@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  background-color: #555;
+  background-color: #555; /* Slightly lighter gray for active page */
   color: #00bfff; /* Highlight the active page */
 }
 
@@ -87,38 +87,27 @@ nav ul li a:hover {
 section {
   text-align: center;
   padding: 60px 20px;
-  color: #ddd;
-}
-
-section#home {
-  background-color: #1a1a1a; /* Same dark background as body */
-}
-
-section#about,
-section#projects,
-section#contact {
-  background-color: #1a1a1a; /* Consistent background for all sections */
+  background-color: #1a1a1a; /* Uniform dark background for all sections */
+  color: #ddd; /* Light text */
 }
 
 /* General Section Box Style */
 .section-box {
-  background-color: #2c2c2c; /* Dark gray background */
+  background-color: #2c2c2c; /* Dark gray for content boxes */
   color: #ddd;
-  padding: 20px 30px; /* Slightly reduce top and bottom padding */
-  border-radius: 10px; /* More rounded corners for a softer look */
+  padding: 20px 30px;
+  border-radius: 10px; /* Rounded corners */
   max-width: 800px;
   margin: 20px auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   text-align: center;
 }
 
-/* Headings Inside Section Boxes */
 .section-box h2 {
-  color: #f4f4f4; /* Slightly brighter heading */
+  color: #f4f4f4; /* Bright heading for boxes */
   margin-bottom: 10px;
 }
 
-/* Paragraphs Inside Section Boxes */
 .section-box p {
   margin: 0;
   font-size: 18px;
@@ -128,10 +117,10 @@ section#contact {
 /* Footer */
 footer {
   font-size: 14px;
-  background-color: #222; /* Same as navbar for consistency */
+  background-color: #222; /* Matches navbar for consistency */
   color: #bbb;
   text-align: center;
-  padding: 20px 0; /* Match navbar padding */
+  padding: 20px 0;
   margin-top: 40px;
 }
 
@@ -154,7 +143,7 @@ button,
   display: inline-block;
   font-size: 18px;
   color: white;
-  background-color: #00bfff; /* Vibrant blue for buttons */
+  background-color: #00bfff; /* Vibrant blue */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -170,27 +159,27 @@ button:hover,
 
 /* Hero Section */
 #hero {
-  background: url("images/hero-background.jpg") no-repeat center center/cover; /* Background image */
-  color: white; /* Light text for contrast */
-  text-align: center; /* Center all content */
-  padding: 100px 20px; /* Space inside the hero section */
+  background: url("images/hero-background.jpg") no-repeat center center/cover; /* Background image for the hero */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
   position: relative; /* For overlay effect */
 }
 
 #hero::before {
-  content: ""; /* Add a semi-transparent overlay */
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
-  z-index: 1; /* Place it below the content */
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* Ensure content is above the overlay */
+  z-index: 2; /* Ensure content is above overlay */
 }
 
 .hero-content h1 {
@@ -222,23 +211,19 @@ button:hover,
 .contact-links {
   margin-top: 20px;
 }
-.contact-links i {
-  margin-right: 10px;
-  color: #00bfff;
-}
 
 .contact-link {
   display: inline-block;
-  margin: 20px 0; /* Add spacing around the email link */
+  margin: 20px 0;
   color: #00bfff;
   font-weight: bold;
   text-decoration: none;
-  font-size: 20px; /* Larger font for emphasis */
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #005fa3; /* Slightly darker blue on hover */
+  color: #005fa3;
 }
 
 .social-link {
@@ -246,30 +231,24 @@ button:hover,
   margin: 10px;
   color: #00bfff;
   text-decoration: none;
-  font-size: 18px; /* Slightly larger text */
-  border: 2px solid #00bfff; /* Make the border slightly thicker */
-  padding: 10px 20px; /* Increase padding for a larger button */
-  border-radius: 8px; /* More rounded corners */
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  font-size: 18px;
+  border: 2px solid #00bfff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 .social-link:hover {
-  background-color: #00bfff; /* Blue background on hover */
-  color: #fff; /* White text on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #00bfff;
+  color: #fff;
+  transform: scale(1.05);
 }
+
 .social-link i {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px;
 }
 
-.button-group {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.button-group a {
-  margin: 0 10px; /* Space between buttons */
-}
+/* Projects Section */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -281,20 +260,18 @@ button:hover,
   background-color: #2c2c2c;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-hr {
+/* Divider */
+hr.divider {
   border: none;
   border-top: 1px solid #444;
-  margin: 20px 0;
-}
-.divider {
-  border: none;
-  border-top: 1px solid #444; /* Subtle line */
-  margin: 40px auto; /* Space around the divider */
+  margin: 40px auto;
   max-width: 800px;
 }
