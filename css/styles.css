@@ -100,6 +100,31 @@ section#contact {
   background-color: #1a1a1a; /* Consistent background for all sections */
 }
 
+/* General Section Box Style */
+.section-box {
+  background-color: #2c2c2c; /* Dark gray background for the box */
+  color: #ddd; /* Light text for contrast */
+  padding: 20px; /* Space inside the box */
+  border-radius: 5px; /* Rounded corners */
+  max-width: 800px; /* Limit box width for readability */
+  margin: 20px auto; /* Center the box and add space around it */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center; /* Center align the text */
+}
+
+/* Headings Inside Section Boxes */
+.section-box h2 {
+  color: #f4f4f4; /* Slightly brighter heading */
+  margin-bottom: 10px;
+}
+
+/* Paragraphs Inside Section Boxes */
+.section-box p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 /* Footer */
 footer {
   font-size: 14px;
