@@ -55,31 +55,38 @@ nav {
 }
 
 nav ul {
-  list-style: none;
+  list-style: none; /* Remove default list styling */
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  display: flex; /* Ensure all list items are aligned in a single row */
+  justify-content: center; /* Center the navigation bar */
+  gap: 20px; /* Add space between links */
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+  position: relative; /* Ensure child elements like hover effects stay within bounds */
 }
 
 nav ul li a {
-  color: #ddd;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a.active {
-  background-color: #555;
-  color: #00bfff;
+  color: #ddd; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size for links */
+  padding: 10px 15px; /* Add padding for clickable area */
+  border-radius: 5px; /* Optional: Rounded edges */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  display: inline-block; /* Prevent overlap on hover */
 }
 
 nav ul li a:hover {
-  background-color: #555;
-  color: #00bfff;
+  background-color: #555; /* Slightly lighter gray on hover */
+  color: #00bfff; /* Highlight color for hover */
+}
+
+nav ul li a.active {
+  background-color: #555; /* Active page background */
+  color: #00bfff; /* Active page text color */
 }
 
 /* Hero Section */
