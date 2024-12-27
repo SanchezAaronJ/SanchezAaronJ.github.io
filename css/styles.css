@@ -255,6 +255,37 @@ hr.divider {
   max-width: 800px;
 }
 
+#skills-interests {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+
+.skills,
+.interests {
+  margin: 20px 0;
+}
+
+.skills ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.skills ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #bbbbbb;
+}
+
+.interests p {
+  text-align: center;
+  line-height: 1.6;
+}
+
 /* Projects Section */
 .project-list {
   display: grid;
