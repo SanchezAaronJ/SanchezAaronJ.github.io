@@ -213,26 +213,26 @@ button:hover,
 }
 
 .contact-link {
-    display: inline-flex; /* Makes the icon and text align properly */
-    align-items: center; /* Vertically aligns the icon and text */
-    margin: 20px 0; /* Adds spacing around the email link */
-    color: #00bfff; /* Blue color for the text */
-    font-weight: bold;
-    text-decoration: none; /* Removes underline by default */
-    font-size: 20px; /* Larger font for emphasis */
-    transition: color 0.3s ease;
-  }
-  
-  .contact-link:hover {
-    color: #005fa3; /* Slightly darker blue on hover */
-    text-decoration: underline; /* Adds underline on hover */
-  }
-  
-  .contact-link i {
-    margin-right: 8px; /* Adds spacing between the icon and text */
-    color: #00bfff; /* Matches the text color */
-    font-size: 22px; /* Ensures the icon matches the text size */
-  }
+  display: inline-flex; /* Makes the icon and text align properly */
+  align-items: center; /* Vertically aligns the icon and text */
+  margin: 20px 0; /* Adds spacing around the email link */
+  color: #00bfff; /* Blue color for the text */
+  font-weight: bold;
+  text-decoration: none; /* Removes underline by default */
+  font-size: 20px; /* Larger font for emphasis */
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #005fa3; /* Slightly darker blue on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+.contact-link i {
+  margin-right: 8px; /* Adds spacing between the icon and text */
+  color: #00bfff; /* Matches the text color */
+  font-size: 22px; /* Ensures the icon matches the text size */
+}
 
 .social-link {
   display: inline-block;
