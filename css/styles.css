@@ -139,7 +139,8 @@ hr.divider {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for consistency */
   text-align: left; /* Left-align for readability */
   line-height: 1.8; /* Improved spacing */
-  font-size: 18px; /* Uniform font size */
+  font-size: 18px;
+  box-sizing: border-box; /* Uniform font size */
 }
 
 .about-section-box h2 {
