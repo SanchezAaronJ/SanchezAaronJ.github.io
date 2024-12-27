@@ -174,27 +174,29 @@ nav ul li a:hover {
 }
 
 /* Sections */
+/* Section Styles */
 section {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  flex-direction: column; /* Ensures elements stack in a column */
-  padding: 60px 20px; /* Space inside the section */
-  background-color: #1a1a1a; /* Keeps the consistent background color */
-  color: #ddd; /* Text color */
-  min-height: 100vh; /* Ensures it takes full viewport height */
-  margin: 0; /* Remove extra margins */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: #ddd;
+  min-height: 100vh;
+  margin: 0;
 }
 
+/* Section Box Styles */
 .section-box {
-  background-color: #2c2c2c; /* Consistent background */
-  color: #ddd; /* Light text */
-  padding: 20px; /* Space inside the box */
-  border-radius: 10px; /* Rounded corners */
-  max-width: 800px; /* Limit width on larger screens */
-  width: 90%; /* Responsive width on smaller screens */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  text-align: center; /* Center-align text inside the box */
+  background-color: #2c2c2c;
+  color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .section-box h2 {
