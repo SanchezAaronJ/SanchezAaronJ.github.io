@@ -151,6 +151,7 @@ section {
   background-color: #1a1a1a;
   color: #ddd;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .section-box {
