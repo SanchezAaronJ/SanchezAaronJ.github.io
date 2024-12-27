@@ -247,7 +247,16 @@ button:hover,
 }
 
 .hero-buttons {
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
+  gap: 10px; /* Add space between buttons */
+}
+
+.cta-button {
+  width: auto; /* Let buttons adjust width naturally */
+  min-width: 150px; /* Ensure buttons don't get too narrow */
+  text-align: center; /* Center-align text inside buttons */
 }
 
 .cta-button.hero {
