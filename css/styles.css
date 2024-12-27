@@ -5,6 +5,7 @@ body {
   color: #ddd; /* Light text for contrast */
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -90,6 +91,7 @@ section {
   padding: 60px 20px;
   background-color: #1a1a1a; /* Uniform dark background for all sections */
   color: #ddd; /* Light text */
+  overflow: hidden;
 }
 
 /* General Section Box Style */
