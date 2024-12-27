@@ -183,7 +183,6 @@ section {
   padding: 40px 20px; /* Adjusted padding to reduce excess space */
   background-color: #1a1a1a; /* Background color */
   color: #ddd; /* Text color */
-  min-height: 90vh; /* Slightly less than full viewport height */
   margin: 0; /* No additional margin */
 }
 
