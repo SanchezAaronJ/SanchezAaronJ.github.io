@@ -194,7 +194,7 @@ section {
   color: #00bfff;
 }
 
-.section-box .job-details {
+.section-box.job-details {
   font-size: 16px;
   color: #bbbbbb;
   margin-bottom: 10px;
