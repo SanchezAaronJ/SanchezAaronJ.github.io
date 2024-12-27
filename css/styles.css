@@ -30,9 +30,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Global H2 Hover Style (Consistent Across All Pages) */
 h2:hover {
-  color: #00bfff; /* Match the button hover color */
-  text-decoration: underline;
+  color: #f4f4f4; /* White hover color for all h2 elements */
+  text-decoration: underline; /* Remove underline for hover */
 }
 
 p {
