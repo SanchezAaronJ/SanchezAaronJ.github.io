@@ -114,6 +114,15 @@ section {
   line-height: 1.6;
 }
 /* About Me Page Specific Styles */
+/* Divider */
+hr.divider {
+  border: none;
+  border-top: 1px solid #444; /* Subtle divider line */
+  margin: 40px auto; /* Spacing above and below */
+  max-width: 800px; /* Consistent width */
+}
+
+/* About Me Page Specific Styles */
 .about-section-box {
   background-color: #2c2c2c; /* Dark gray for content boxes */
   color: #ddd; /* Light text for readability */
